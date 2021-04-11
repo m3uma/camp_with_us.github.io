@@ -73,6 +73,7 @@ signupGoogle.addEventListener('click', (e) => {
 //fb
 const signupFacebook = document.getElementById('fb-btn')
 signupFacebook.addEventListener('click', (e) => {
+    console.log("KLIKAM");
     e.preventDefault();
     var provider = new firebase.auth.FacebookAuthProvider();
 
