@@ -62,8 +62,10 @@ signupGoogle.addEventListener('click', (e) => {
     var provider = new firebase.auth.GoogleAuthProvider();
 
     auth.signInWithPopup(provider).then(cred => {
+        console.log("LOGUJE");
         console.log(cred);
     }).catch((e) => {
+        console.log("NIE LOGUJE");
         console.log(e);
     })
 })
