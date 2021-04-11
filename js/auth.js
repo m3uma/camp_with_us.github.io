@@ -58,6 +58,7 @@ loginForm.addEventListener('submit', (e) => {
 //google
 const signupGoogle = document.getElementById('google-btn')
 signupGoogle.addEventListener('click', (e) => {
+    e.preventDefault();
     var provider = new firebase.auth.GoogleAuthProvider();
 
     auth.signInWithPopup(provider).then(cred => {
