@@ -71,3 +71,16 @@ signupGoogle.addEventListener('click', (e) => {
 })
 
 //fb
+const signupFacebook = document.getElementById('fb-btn')
+signupFacebook.addEventListener('click', (e) => {
+    e.preventDefault();
+    var provider = new firebase.auth.FacebookAuthProvider();
+
+    auth.signInWithPopup(provider).then(cred => {
+        console.log("LOGUJE");
+        console.log(cred);
+    }).catch((e) => {
+        console.log("NIE LOGUJE");
+        console.log(e);
+    })
+})
