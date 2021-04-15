@@ -26,7 +26,7 @@ signupForm.addEventListener('submit', (e) => {
 
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
         const modal = document.querySelector('#signupModal');
-        M.Modal.getInstance(modal).close();
+       // M.Modal.getInstance(modal).close();
         window.location.href="./main.html";
         signupForm.reset();
     }).catch((e) => {
@@ -51,7 +51,7 @@ loginForm.addEventListener('submit', (e) => {
 
     auth.signInWithEmailAndPassword(email, password).then(cred => {
         const modal = document.querySelector('#logModal');
-        M.Modal.getInstance(modal).close;
+       // M.Modal.getInstance(modal).close;
         window.location.href="./main.html";
         loginForm.reset();
     }).catch((e) => {
