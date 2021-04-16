@@ -34,7 +34,7 @@
 </head>
 <body id="body-index">
 <div class="container text-white text-center">
-    <h1 class="display-1 ">Camp with us</h1>
+     <h1 class="display-1 ">Camp with us</h1>
     <div class="row align-items-center"><div class="col-md-12"><img src="images/logo.png" alt="logo" class="img-fluid d-sm-inline" style="width:40%;padding:10% 0 10% 0;"></div></div>
      <div class="col-md-12" style="padding-bottom:4%"><button data-toggle="modal" class="btn btn-lg btn-primary px-5" id ="login-btn" data-target="#logModal">Zaloguj się</button></div>
 
@@ -80,12 +80,13 @@
                 </div>
             </div><br>
             <div id="error-message"></div>
-            <div class="modal-footer">
-                Nie masz konta?
-                <div class="form-btn">
-                    <button class="btn-info" data-toggle="modal" data-target="#signupModal">Zarejestruj się</button>
+            <br>
+                <div class="modal-footer">
+                    Nie masz konta?   
+                    <div class="form-btn">
+                        <button class="btn-info" data-toggle="modal" data-target="#signupModal"data-dismiss="modal" aria-label="close">Zarejestruj się</button>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
 </div>
@@ -124,13 +125,19 @@
                             <button class="submit-btn" class="close">Zarejestruj się</button>
                         </div>
                         <div id="error-signup"></div>
+                        <br>
+                <div class="modal-footer">
+                    Masz już konto?   
+                    <div class="form-btn">
+                        <button class="btn-info" data-toggle="modal" data-target="#logModal"data-dismiss="modal" aria-label="close">Zaloguj się</button>
+                    </div>
+                </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
