@@ -14,7 +14,7 @@ if ("serviceWorker" in navigator) {
   });
 };
 
-auth.onAuthStateChanged(user => {
+/*auth.onAuthStateChanged(user => {
     const logout = document.getElementById('logout-btn');
     const login = document.getElementById('login-btn');
     if (user){
@@ -27,7 +27,7 @@ auth.onAuthStateChanged(user => {
         //  login.style.display = 'block';
 
     }
-});
+}); */
 
 //logout
 const logout = document.getElementById('logout-btn');
